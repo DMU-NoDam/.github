@@ -1,17 +1,6 @@
 # ARUBI (NoDam) — AI 여행 플래너 백엔드
 
-> 최소한의 정보 입력만으로 AI가 최적의 여행 일정을 자동으로 만들어주는 여행 플래너, **ARUBI**의 백엔드 서버입니다.
-
----
-
-## 목차
-
-- [프로젝트 소개](#프로젝트-소개)
-- [주요 기능](#주요-기능)
-- [기술 스택](#기술-스택)
-- [ERD](#erd)
-- [향후 개발 계획](#향후-개발-계획)
-- [팀원](#팀원)
+> 최소한의 정보 입력만으로 AI가 최적의 여행 일정을 자동으로 만들어주는 여행 플래너, **ARUBI**입니다.
 
 ---
 
@@ -27,6 +16,8 @@
 - 사용자는 필수 정보(지역, 날짜, 인원)와 선택 정보(여행 스타일, 예산, 항공/호텔 카테고리)를 입력합니다.
 - AI가 날짜별로 지역을 배정하고, 검증된 장소 후보를 조회하여 가중치 기반으로 추천한 뒤, 동선과 시간을 최적화해 일정을 완성합니다.
 - 완성된 일정은 사용자가 장소·이동 수단을 직접 추가/수정/삭제하며 자유롭게 편집할 수 있습니다.
+
+[**소개 영상**](https://m.youtube.com/watch?si=5NuZfLTFbHslCTga&v=gb-1Y846gdY&feature=youtu.be)
 
 ---
 
@@ -56,35 +47,6 @@
 
 ---
 
-## 기술 스택
-
-| 구분 | 기술 |
-|------|------|
-| Language / Framework | Java 21, Spring Boot 3.5.7 |
-| Security | Spring Security, JWT |
-| Persistence | JPA (Hibernate), QueryDSL, MySQL 8.0 |
-| Docs | Swagger (springdoc-openapi) |
-| Test | JUnit, Mockito |
-| AI | Google Gemini (2.5 Flash) |
-| 외부 연동 | Google Places API, AirLabs API(항공), Xotelo API(숙소) |
-| Infra / CI-CD | Docker, GitHub Actions, AWS EC2 |
-
----
-
-## ERD
-
-<img width="1119" height="688" alt="스크린샷 2026-06-16 오후 4 50 22" src="https://github.com/user-attachments/assets/a4920117-7f55-4cc4-a9d5-cf153fa086d0" />
-
----
-
-## 향후 개발 계획
-
-- 실시간 위치 처리
-- Trip 공유 및 실시간 공동 편집
-- AI 일정 생성 속도 및 안정성 개선
-
----
-
 ## 팀원
 
 **TEAM. NODAM**
@@ -95,3 +57,9 @@
 | 이권희 | Backend |
 | 민도현 | Frontend |
 | 육나윤 | Frontend |
+
+---
+
+## ERD
+
+<img width="1119" height="688" alt="스크린샷 2026-06-16 오후 4 50 22" src="https://github.com/user-attachments/assets/a4920117-7f55-4cc4-a9d5-cf153fa086d0" />
