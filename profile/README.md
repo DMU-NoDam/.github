@@ -33,6 +33,7 @@
 - 생성된 일정은 추가 / 수정 / 삭제 가능합니다.
 - 동행자를 초대해 여행 일정 공유합니다.
 - 공유된 일정은 동행자와 동시에 편집할 수 있습니다.
+<img width="320" height="700" alt="스크린샷 2026-10-14 오후 8 35 15" src="https://github.com/user-attachments/assets/ea5f99c3-807f-4269-83b2-244df817e9ac" />
 <img width="320" height="700" alt="스크린샷 2026-10-14 오후 8 21 06" src="https://github.com/user-attachments/assets/3f838b52-1d89-4102-85db-9795d770df74" />
 
 
