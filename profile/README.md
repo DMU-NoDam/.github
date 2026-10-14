@@ -24,27 +24,27 @@
 - 날짜별 필수 장소(공항, 숙소) 배정 → 후보 장소 조회 → 가중치 기반 추천 → Route 정보 조회 순으로 일정을 구성합니다.
 - 완성된 여행 일정은 지도와 같이 확인할 수 있습니다.
 
-<img width="322" height="707" alt="스크린샷 2026-10-14 오후 8 24 12" src="https://github.com/user-attachments/assets/5456f3c5-2bec-409b-a9df-12c2bc062dda" />
+<img width="320" height="700" alt="스크린샷 2026-10-14 오후 8 24 12" src="https://github.com/user-attachments/assets/5456f3c5-2bec-409b-a9df-12c2bc062dda" />
 
-<img width="323" height="702" alt="스크린샷 2026-10-14 오후 8 18 44" src="https://github.com/user-attachments/assets/4e799808-1c05-47e2-97ba-8a0b4ef7e901" />
+<img width="320" height="700" alt="스크린샷 2026-10-14 오후 8 18 44" src="https://github.com/user-attachments/assets/4e799808-1c05-47e2-97ba-8a0b4ef7e901" />
 
 
 ### 일정 공유 / 실시간 공동 편집
 - 생성된 일정은 추가 / 수정 / 삭제 가능합니다.
 - 동행자를 초대해 여행 일정 공유합니다.
 - 공유된 일정은 동행자와 동시에 편집할 수 있습니다.
-<img width="282" height="609" alt="스크린샷 2026-10-14 오후 8 21 06" src="https://github.com/user-attachments/assets/3f838b52-1d89-4102-85db-9795d770df74" />
+<img width="320" height="700" alt="스크린샷 2026-10-14 오후 8 21 06" src="https://github.com/user-attachments/assets/3f838b52-1d89-4102-85db-9795d770df74" />
 
 
 ### AI 장소 추천
 - 맘에 들지 않는 장소는 AI에게 다시 추천 받을 수 있습니다.
 - 지역·예산·계절·테마·날씨 가중치를 통해 장소를 추천합니다.
-<img width="324" height="702" alt="스크린샷 2026-10-14 오후 8 25 05" src="https://github.com/user-attachments/assets/99efa447-b621-40ad-87ff-bbadd4b9b7d0" />
+<img width="320" height="700" alt="스크린샷 2026-10-14 오후 8 25 05" src="https://github.com/user-attachments/assets/99efa447-b621-40ad-87ff-bbadd4b9b7d0" />
 
 ### 장소 DB 파이프라인
 - AI 일정 생성에 사용되는 장소들은 모두 미리 선별된 장소들입니다.
 - 크롤링 → 정제 → LLM → DB 반영 파이프라인을 통해 장소 DB를 직접 구성하여 운영됩니다
-<img width="300" height="130" alt="crawling_pipeline_large" src="https://github.com/user-attachments/assets/56e25f3b-095d-49c3-92f6-57099def1b39" />
+<img width="320" height="700" alt="crawling_pipeline_large" src="https://github.com/user-attachments/assets/56e25f3b-095d-49c3-92f6-57099def1b39" />
 
 ---
 
