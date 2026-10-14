@@ -6,37 +6,74 @@
 
 ## 프로젝트 소개
 
-<img width="213" height="76" alt="스크린샷 2026-06-16 오후 5 27 38" src="https://github.com/user-attachments/assets/2bc92b33-04ca-4876-80e6-3fe7f2a03682" />
+<img width="213" height="76" alt="스크린샷 2026-06-16 오후 5 27 38" src="https://github.com/user-attachments/assets/2bc92b33-04ca-4876-80e6-3fe7f2a03682" />
 
+<!-- TODO: front 캡처 화면 삽입 -->
 
-여행을 준비할 때는 항공, 숙소, 관광지 정보를 각각 따로 검색해야 하는 번거로움이 있고, 그 정보를 모아 하나의 일정으로 엮어내는 과정에서 많은 시간과 심리적 피로가 발생합니다.
+**ARUBI**는 사용자가 최소 정보만 입력하면, AI가 검증된 장소들을 바탕으로 맞춤형 여행 일정을 생성해주는 서비스입니다.
 
-**ARUBI**는 이 문제를 해결하기 위해, 사용자가 지역·날짜·인원 등 최소한의 정보만 입력하면 AI가 검증된 장소 데이터를 바탕으로 동선까지 고려한 맞춤형 여행 일정을 자동으로 생성해주는 서비스입니다.
-
-- 사용자는 필수 정보(지역, 날짜, 인원)와 선택 정보(여행 스타일, 예산, 항공/호텔 카테고리)를 입력합니다.
-- AI가 날짜별로 지역을 배정하고, 검증된 장소 후보를 조회하여 가중치 기반으로 추천한 뒤, 동선과 시간을 최적화해 일정을 완성합니다.
-- 완성된 일정은 사용자가 장소·이동 수단을 직접 추가/수정/삭제하며 자유롭게 편집할 수 있습니다.
-
-[**소개 영상**](https://m.youtube.com/watch?si=5NuZfLTFbHslCTga&v=gb-1Y846gdY&feature=youtu.be)
+- **필수 입력** : 여행 국가·도시, 인원, 여행 날짜(시작·종료)
+- **선택 입력** : 숙소, 가고 싶은 싶은 장소, 항공편(출발·도착), 여행 스타일, 예산
 
 ---
 
 ## 주요 기능
 
-### AI 여행 일정 자동 생성 기능
-- 지역 · 날짜 · 인원 등 필수 정보와 여행 스타일 · 예산 · 항공 · 호텔 등 선택 정보를 입력받아 여행 일정을 생성합니다.
-- 사용자는 여행 테마(음식, 랜드마크, 럭셔리)별로 생성된 일정 중에서 맘에드는 일정을 선택합니다.
+### AI 일정 자동 생성
+- 사용자의 최소한의 정보를 통해 AI가 여행 일정을 생성합니다.
+- 날짜별 필수 장소(공항, 숙소) 배정 → 후보 장소 조회 → 가중치 기반 추천 → Route 정보 조회 순으로 일정을 구성합니다.
+- 완성된 여행 일정은 지도와 같이 확인할 수 있습니다.
 
-### 일정 관리 기능
-- 선택한 일정의 상세 일정을 조회합니다.
-- 지도에 선정된 장소와 이동 정보를 확인합니다.
-- ai 장소 추천을 통해 일정을 수정 / 편집 합니다.
-- 일정을 확정합니다.
+<img width="322" height="707" alt="스크린샷 2026-10-14 오후 8 24 12" src="https://github.com/user-attachments/assets/5456f3c5-2bec-409b-a9df-12c2bc062dda" />
 
-### 여행 중 기능
-- 실시간 위치를 보며 일정에 따라 여행을 즐깁니다.
-- 여행에 필요한 다양한 정보를 제공받습니다. (환율, 날씨, 현지 문화)
+<img width="323" height="702" alt="스크린샷 2026-10-14 오후 8 18 44" src="https://github.com/user-attachments/assets/4e799808-1c05-47e2-97ba-8a0b4ef7e901" />
 
+
+### 일정 공유 / 실시간 공동 편집
+- 생성된 일정은 추가 / 수정 / 삭제 가능합니다.
+- 동행자를 초대해 여행 일정 공유합니다.
+- 공유된 일정은 동행자와 동시에 편집할 수 있습니다.
+<img width="282" height="609" alt="스크린샷 2026-10-14 오후 8 21 06" src="https://github.com/user-attachments/assets/3f838b52-1d89-4102-85db-9795d770df74" />
+
+
+### AI 장소 추천
+- 맘에 들지 않는 장소는 AI에게 다시 추천 받을 수 있습니다.
+- 지역·예산·계절·테마·날씨 가중치를 통해 장소를 추천합니다.
+<img width="290" height="608" alt="스크린샷 2026-10-06 오후 5 45 11" src="https://github.com/user-attachments/assets/b99a0831-e54d-49c2-b0d5-5a0f280a3e1d" />
+
+
+### 장소 DB 파이프라인
+- AI 일정 생성에 사용되는 장소들은 모두 미리 선별된 장소들입니다.
+- 크롤링 → 정제 → LLM → DB 반영 파이프라인을 통해 장소 DB를 직접 구성하여 운영됩니다
+
+---
+
+## 기술 스택
+
+### Frontend
+| 구분 | 기술 |
+|------|------|
+| Language / Framework | TypeScript, React, Vite |
+| 상태 관리 | Zustand, TanStack Query |
+| Form / 검증 | React Hook Form, Zod |
+| HTTP / UI | Axios, Framer Motion |
+
+### Backend
+| 구분 | 기술 |
+|------|------|
+| Language / Framework | Java 21, Spring Boot 3.5.7 |
+| Security | Spring Security, JWT |
+| DB | JPA (Hibernate), QueryDSL, MySQL 8.0 |
+| 장소 DB 파이프라인 | FastAPI, LLM |
+| 인증 | Google · Kakao · Naver OAuth |
+| 외부 연동 | Google Places(장소) · Google Routes · NAVITIME(경로), AirLabs(항공), Xotelo(숙소), Open-Meteo(날씨), Microsoft Translator(번역) |
+| Infra / CI-CD | Docker, GitHub Actions, AWS EC2 |
+
+---
+
+## ERD
+
+<!-- TODO: 최신 ERD 이미지 삽입 -->
 
 ---
 
@@ -44,15 +81,7 @@
 
 **TEAM. NODAM**
 
-| 이름 | 역할 |
+| Frontend | Backend |
 |------|------|
-| 최진솔 | Backend |
-| 이권희 | Backend |
-| 민도현 | Frontend |
-| 육나윤 | Frontend |
-
----
-
-## ERD
-
-<img width="1119" height="688" alt="스크린샷 2026-06-16 오후 4 50 22" src="https://github.com/user-attachments/assets/a4920117-7f55-4cc4-a9d5-cf153fa086d0" />
+| 육나윤 | 이권희 |
+| 민도현 | 최진솔 |
