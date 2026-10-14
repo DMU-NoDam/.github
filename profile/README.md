@@ -66,15 +66,14 @@
 | Security | Spring Security, JWT |
 | DB | JPA (Hibernate), QueryDSL, MySQL 8.0 |
 | 장소 DB 파이프라인 | FastAPI, LLM |
-| 인증 | Google · Kakao · Naver OAuth |
-| 외부 연동 | Google Places(장소) · Google Routes · NAVITIME(경로), AirLabs(항공), Xotelo(숙소), Open-Meteo(날씨), Microsoft Translator(번역) |
-| Infra / CI-CD | Docker, GitHub Actions, AWS EC2 |
+| 외부 연동 | Google API , AirLabs(항공), Xotelo(숙소), Open-Meteo(날씨), Microsoft Translator(번역) |
+| Infra | Docker, AWS |
 
 ---
 
 ## ERD
 
-<!-- TODO: 최신 ERD 이미지 삽입 -->
+예쁘게 만드는 중입니다!
 
 ---
 
