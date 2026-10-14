@@ -44,7 +44,7 @@
 ### 장소 DB 파이프라인
 - AI 일정 생성에 사용되는 장소들은 모두 미리 선별된 장소들입니다.
 - 크롤링 → 정제 → LLM → DB 반영 파이프라인을 통해 장소 DB를 직접 구성하여 운영됩니다
-<img width="850" height="150" alt="crawling_pipeline_large" src="https://github.com/user-attachments/assets/56e25f3b-095d-49c3-92f6-57099def1b39" />
+<img width="850" height="450" alt="crawling_pipeline_large" src="https://github.com/user-attachments/assets/56e25f3b-095d-49c3-92f6-57099def1b39" />
 
 ---
 
